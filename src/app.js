@@ -31,6 +31,9 @@ app.use('/api/v1', categoryRoutes)
    
 app.use('/', (req, res)=>{
     console.log('Todo bien');
+    res.json({
+        message: 'Welcome'
+    })
 });
 
 
